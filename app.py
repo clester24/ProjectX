@@ -6,7 +6,7 @@ from bson import json_util
 
 app = Flask(__name__)
 
-cluster = MongoClient("mongodb+srv://austinbarrette:Mongo123@cluster0.ou3yi.mongodb.net/california_lakes?retryWrites=true&w=majority")
+cluster = MongoClient("mongodb+srv://USERNAME:PASSWORD@cluster0.ou3yi.mongodb.net/california_lakes?retryWrites=true&w=majority")
 db = cluster["california_lakes"]
 collection_lake_oroville = db["lake_oroville"]
 collection_lake_shasta = db["lake_shasta"]
