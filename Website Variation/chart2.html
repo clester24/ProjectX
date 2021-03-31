@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Water Level</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tablesort.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="MachineL.html">Machine Learning</a>
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Data
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="chart.html">Oroville</a>
+          <a href="chart2.html">Shasta</a>
+          <a href="MachineL2.html">ML2</a>
+        </div>
+        </div> 
+    </div>
+    <div class="container">
+      <h1>Shasta Info</h1>
+      <div id="searchWrapper">
+          <input
+              type="text"
+              name="searchBar"
+              id="searchBar"
+              placeholder="search"
+          />
+      </div>
+      <ul id="lakeList"></ul>
+  </div>
+        <div class="col-md-10">
+          <div id="table-area" class=""></div>
+            <table id="" class="table table-sortable">
+              <thead>
+                <tr>
+                  <th>DATE</th>
+                  <th>PRCP</th>
+                  <th>TMAX</th>
+                  <th>TMIN</th>
+                  <th>RAIN</th>
+                  <th>RESERVE</th>
+                  <th>DROUGHT</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="shasta.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
