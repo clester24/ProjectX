@@ -117,3 +117,39 @@ div.image-container {
     z-index: 999999;
     text-align: center;
 }
+
+
+#gif:hover {
+  position: relative;
+  top: 10px;
+  left: 0px;
+  width: 45%;
+  height: 45%;
+  bottom: 0;
+  z-index:9999;
+}
+
+.resource-container {
+  text-align: center;
+}
+
+
+.data-images{
+  position: relative;
+  top: 200px;;
+}
+
+
+#cmcoder {
+  background-color:green;
+}
+
+.inside {
+  list-style-position: inside;
+  list-style-image: url("https://mdn.mozillademos.org/files/11979/starsolid.gif");
+}
+
+
+a.re-links:hover {
+  background:#66ff66;
+}
